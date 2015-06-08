@@ -83,10 +83,6 @@ All returns and discounts are at risk-free rate.
 Risk incorporated into price of stock.
 
 ---
-## what is going on
-
----
-
 ## Risk Free Portfolio (RFP)
 
 ### Value of portfolio is same whether stock price goes up or down:
