@@ -32,7 +32,12 @@ knit        : slidify::knit2slides
 
 ### R:
 * Open Source Code & Shared Libraries
-
+```{r echo=FALSE, warning=FALSE, results='hide', message=FALSE}
+require(stringr)
+require(slidify)
+require(knitr)
+require(DiagrammeR)
+```
 * Plotting, Typesetting, & Slide Presentations
 
 ### Version Control

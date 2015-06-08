@@ -7,6 +7,6 @@
 *.bz2
 # *.html
 *.pdf
-*.Rmd
+# *.Rmd
 # *.txt
 # *.png

@@ -44,20 +44,58 @@
     <!-- SLIDES -->
     <slide class="" id="slide-1" style="background:;">
   <hgroup>
-    <h2>Preparing R-programming environment</h2>
+    <h2>Outline</h2>
   </hgroup>
   <article data-timings="">
-    <pre><code class="r">require(stringr)
-require(slidify)
-require(knitr)
-require(DiagrammeR)
-</code></pre>
+    <h3>Tools:</h3>
+
+<ol>
+<li>Programming Environment</li>
+<li>Probability</li>
+<li>Calculus</li>
+</ol>
+
+<h3>Finance Theory:</h3>
+
+<ol>
+<li>Future Value of Money</li>
+<li>Binomial Tree Pricing Model for Option</li>
+</ol>
+
+<h3>Example</h3>
+
+<h3>Conclusions</h3>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-2" style="background:;">
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Integrated Development Environment (IDE)</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>R:</h3>
+
+<ul>
+<li><p>Open Source Code &amp; Shared Libraries</p></li>
+<li><p>Plotting, Typesetting, &amp; Slide Presentations</p></li>
+</ul>
+
+<h3>Version Control</h3>
+
+<ol>
+<li><a href="https://www.git-scm.com">Git</a> invented by Linus Torvalds (open source Linux)</li>
+<li><a href="https://github.com/RobertTwesten/Tristan">Git Hub</a> distributed version control (<a href="https://github.com/google">used by Google</a>)</li>
+</ol>
+
+<hr>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
   <hgroup>
     <h2>Tools from AP Calculus</h2>
   </hgroup>
@@ -85,7 +123,7 @@ require(DiagrammeR)
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="class" id="id" style="background:;">
+<slide class="" id="slide-4" style="background:;">
   <hgroup>
     <h2>Tools from Probability</h2>
   </hgroup>
@@ -101,7 +139,7 @@ require(DiagrammeR)
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-4" style="background:;">
+<slide class="" id="slide-5" style="background:;">
   <hgroup>
     <h2>Risk Neutral Valuation</h2>
   </hgroup>
@@ -116,49 +154,98 @@ require(DiagrammeR)
 <h3>Purpose</h3>
 
 <ol>
-<li><p>Risk Neutral Valuation (RVN) simplifies pricing.</p>
-
-<p>All returns and discounts are at risk-free rate.</p></li>
-<li><p>Relationship between stock and derivative is the same regardless of risk.</p>
-
-<p>Risk incorporated into price of stock.</p></li>
+<li>Risk Neutral Valuation (RNV) simplifies pricing.</li>
 </ol>
 
-<hr>
+<p>All returns and discounts are at risk-free rate.</p>
 
-<h2>Stochastic Processes</h2>
+<ol>
+<li>Relationship between stock and derivative is the same regardless of risk.</li>
+</ol>
 
-<h3>Stochastic processes are observations whose value is random with respect to time.</h3>
+<p>Risk incorporated into price of stock.</p>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-5" style="background:;">
+<slide class="" id="slide-6" style="background:;">
+  <hgroup>
+    <h2>what is going on</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-7" style="background:;">
+  <hgroup>
+    <h2>Risk Free Portfolio (RFP)</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Value of portfolio is same whether stock price goes up or down:</h3>
+
+<p>\begin{equation}
+    (\Delta S_o) u - f_u = (\Delta S_o) d - f_d
+\end{equation}</p>
+
+<h3>\(\Delta\) Hedge</h3>
+
+<h3>Determine number of shares required for RFP</h3>
+
+<p>\begin{equation}
+    \Delta = \frac{f_u - f_d}{S_o (u-d)}
+\end{equation}</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-8" style="background:;">
+  <hgroup>
+    <h2>Stochastic Processes</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Stochastic processes are observations whose value is random with respect to time.</h3>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-9" style="background:;">
   <hgroup>
     <h3>Markov Process</h3>
   </hgroup>
   <article data-timings="">
     <ul>
 <li>Markov process with respect to stock price implies that future price only depends on current price.</li>
-<li><p>Distribution is normal</p>
-
-<p>Means are additive and variances are additive</p></li>
+<li>Distribution is normal</li>
 </ul>
 
-<hr>
+<p>Means are additive and variances are additive</p>
 
-<h4>Wiener Process</h4>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
 
-<ul>
-<li><p>Distribution is standard normal, i.e. mean = 0 and variance = 1.</p>
+<slide class="" id="slide-10" style="background:;">
+  <hgroup>
+    <h4>Wiener Process</h4>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Distribution is standard normal, i.e. mean = 0 and variance = 1.</li>
+</ul>
 
 <p>A physical example of a Wiener processes is Brownian motion.</p>
 
-<p>\(Var(X) = E[X^2] - (E[X])^2\)</p></li>
-<li><p>Two properties are:</p></li>
-<li><p>The change \(\Delta z\) during a small period of time \(\Delta t\) is \(\Delta z = \epsilon \sqrt(\Delta t)\) where \(\epsilon\) is a standard normal distribution \(\Phi(0,1)\).</p></li>
-<li><p>The values of \(\Delta z\) for any two different short intervals of time, \(\Delta t\), are independent.</p></li>
+<p>\(Var(X) = E[X^2] - (E[X])^2\)</p>
+
+<ul>
+<li>Two properties are:</li>
+<li> The change \(\Delta z\) during a small period of time \(\Delta t\) is \(\Delta z = \epsilon \sqrt(\Delta t)\) where \(\epsilon\) is a standard normal distribution \(\Phi(0,1)\).</li>
+<li> The values of \(\Delta z\) for any two different short intervals of time, \(\Delta t\), are independent.</li>
 </ul>
 
   </article>
@@ -171,32 +258,62 @@ require(DiagrammeR)
     <ul>
       <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=1 title='Preparing R-programming environment'>
+        data-slide=1 title='Outline'>
          1
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title='Tools from AP Calculus'>
+        data-slide=2 title='Integrated Development Environment (IDE)'>
          2
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=3 title='Tools from Probability'>
+        data-slide=3 title='Tools from AP Calculus'>
          3
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=4 title='Risk Neutral Valuation'>
+        data-slide=4 title='Tools from Probability'>
          4
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=5 title='Markov Process'>
+        data-slide=5 title='Risk Neutral Valuation'>
          5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='what is going on'>
+         6
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title='Risk Free Portfolio (RFP)'>
+         7
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title='Stochastic Processes'>
+         8
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title='Markov Process'>
+         9
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title='Wiener Process'>
+         10
       </a>
     </li>
   </ul>
